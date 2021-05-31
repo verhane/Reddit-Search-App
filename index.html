@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reddit Search App </title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--> <!-- Bootstrap -->
+   
+  </head>
+  <body>
+    <h1 class=" h3 text-left bg-dark text-white p-2 ">Search App </h1>
+    <div class="container" id="ClassContainer">
+    <div class="card '' mx-auto mt-4 " id="search">
+      
+      <div  class="card-body bg-light" >
+        <div class="card-title"> <h4> Reddit Search </h4> </div>
+          <form class="form" id="search-form">
+           <input type="text" class="form-control mb-3" id="search-input" placeholder="search term...">
+           <div class="form-check  form-check-inline mx-2">
+             Sort By : 
+            <input class="form-check-input ml-1 mt-2" type="radio" name="sortBy" id="flexRadioDefault1" value="Relevance">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Relevance
+            </label>
+          </div>
+          <div class="form-check  form-check-inline ">
+            <input class="form-check-input ml-1 mt-2" type="radio" name="sortBy" id="flexRadioDefault2" checked value="Latest">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Latest 
+            </label>
+          </div>
+          <h5>Limit :</h5>
+          <div class="form-group">
+            <select name="limit" id="limit" class="form-control text-dark">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <button class="btn btn-danger btn-block mt-4" type="submit">Search </button>
+          </form>
+         
+      </div>
+    </div>
+  </div>
+   <div id="results" class="my-4 container mx-auto"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bundle.js"></script>
+  </body>
+</html
